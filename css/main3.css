@@ -1,0 +1,175 @@
+body{
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 15px;
+	padding: 0px;
+	margin: 0px;
+
+
+
+}
+
+div, p, input, button, form{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clearfix:after{
+	content: '';
+	display: table;
+	width: 100%;
+
+}
+
+#header{
+ background:  #FFFFFF;
+ color: #656262;
+ padding: 30px 45px;
+ padding: 25px 10px 25px 30px;
+}
+
+.logo{
+	font-size: 24px;
+	font-weight: bold;
+	float: left;
+	margin-right: 250px;
+	color: #656262;
+}
+
+.logo:hover{
+	color: #000000;}
+
+.main-menu{
+	padding: 0px;
+	margin: 0px;
+}
+
+.menu-item{
+	float: left;
+	margin-right: 27px;
+	font-size: 20px;
+	display: block;
+	font-weight: bold;
+	
+}
+
+.menu-item a{
+	color: #656262;
+	font-weight: bold;
+}
+
+.item{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 15px;
+	border-radius: 11px;
+	color: #656262;
+	text-decoration: none;
+	border: 2px solid #656262;
+}
+
+.item_current {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 15px;
+	border-radius: 11px;
+	background: #656262;
+	border: 2px solid #656262;
+	color: #fff;
+	text-decoration: none;
+}
+a.item_current{
+	color: #fff;
+	font-weight: bold;
+}
+
+.item:hover{
+  	background: #656262;
+	border: 2px solid #656262;
+	color: #fff;
+}
+.signin{
+	font-size: 18px;
+	font-weight: bold;
+	float: right;
+	color: #656262;
+	margin-right: 10px;
+}
+
+.login{
+	font-size: 18px;
+	font-weight: bold;
+	float: right;
+	color: #656262;
+	margin-right: 10px;
+}
+
+.signin:hover{
+	color: #000000;
+
+}
+.login:hover{
+	color: #000000;
+
+}
+
+
+.container {
+	background: #33333b url(../img/10.jpg) no-repeat center top / cover;
+	height: 900px;
+	padding-top: 38px;
+	opacity: 0.9;
+	box-shadow: 0px 0px 25px #775947;
+	
+}
+.container__center {
+	background: #fff;
+	width: 750px;
+	border-radius: 11px;
+	background: rgba(255, 255, 255, 0.9);
+	margin: 0px auto;
+	/*height: auto;*/
+	padding: 15px 15px 15px 15px;
+	text-align: center;
+}
+.about{
+	font-family: Tahoma, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #656262;
+	margin: 0px 0px 0px 0px;
+	letter-spacing: 0.1em;
+	padding: 30px;
+
+}
+
+
+#footer{
+ background:  #FFFFFF;
+ color: #656262;
+ padding: 15px 15px 15px 25px;
+ box-shadow: 0px 0px 50px black;
+}
+
+
+.footer-menu{
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer-item{
+	float: left;
+	margin-right: 27px;
+	font-size: 18px;
+	display: block;
+}
+
+
+.by{
+	font-weight: bold;
+	font-size: 18px;
+	float: right;
+	margin-top: 10px;
+}

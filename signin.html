@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign in</title>
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="icon" type="image/png" href="img/icon2.png">
+
+
+</head>
+<script language="JavaScript">
+var forma_ok=false
+function test(form){
+	if (form.name.value == ""){
+		forma_ok=false
+		alert("Введіть ім’я!")
+	}
+	else
+	if (form.surname.value == ""){
+		forma_ok=false
+		alert("Введіть Прізвище!")
+	}
+	else
+	if ((form.email.value.indexOf('@',0)<1)||(form.email.value.indexOf('@',0)==form.email.value.length-1)){
+		forma_ok=false
+		alert("Не правильно введена e-mail адреса!")
+	}
+	else
+	if (form.password.value == ""){
+		forma_ok=false
+		alert("Введіть Пароль!")
+		}
+	else
+	if (form.password1.value == ""){
+		forma_ok=false
+		alert("Введіть підтвердження паролю!")
+		}
+	else
+	if (form.password1.value != password.value){
+		forma_ok=false
+		alert("Паролі не співпадають!")
+		} 
+	else forma_ok=true
+	if(forma_ok){
+		alert("Форма заповнена!");
+		form.reset();
+	}
+}
+</script>
+
+<body>
+	<section id="header" class="clearfix">
+		<!--<div class="logo">
+			Cooffeesy
+		</div>-->
+		<a class="logo" href="coffeely.html"> Coffeely </a>
+		<nav>
+			<ul class="main-menu">
+				<li class="menu-item">
+					<a class="item" href="aboutus.html" 
+					>Про нас</a>
+				</li>
+				<li class="menu-item">
+					<a class="item" href="menu.html">Меню та ціни</a>
+				</li>
+				<li class="menu-item">
+					<a class="item" href="aboutcoffee.html">Про каву</a>
+				</li>
+				<li class="menu-item">
+					<a class="item" href="aboutsweets.html">Про десерти</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<a class="signin" href="#"> Реєстрація </a>
+		<a class="login" href="login.html"> Вхід</a>
+
+	</section>
+
+
+	<div class="container">
+		<div class="container__center">
+		<div class="form" id="forma">
+			<form id="forma">
+			<p class="title"> Ім'я </p>
+			<input type="text" id="name" placeholder="Введіть ім'я" class="input" required> <br>
+			<p class="title"> Прізвище </p>
+			<input type="text" id="surname" placeholder="Введіть прізвще" class="input" required> <br>
+			<p class="title"> Ім'я користувача </p>
+			<input type="text" id="username" placeholder="Введіть ім'я користувача" class="input" required> <br>
+			<p class="title"> Email-адреса </p>
+			<input type="email" id="email" placeholder="Введіть Email-адресу" class="input" required> <br>
+			<p class="title"> Телефон </p>
+			<input type="tel" id="phone" placeholder="Введіть телефон" class="input" required> <br>
+			<p class="title"> Пароль </p>
+			<input type="password" id="password" placeholder="Введіть пароль" class="input" required> <br>
+			<p class="title"> Підтердження паролю </p>
+			<input type="password" id="password1" placeholder="Введіть підтвердження паролю" class="input" required> <br>
+			<div>
+				<p class="title"> Оцініть якість обслуговування у нашому закладі. </p>
+				<p class="version"><input name="yes" type="radio" value="well"> Відмінна </p>
+				<p class="version"><input name="yes" type="radio" value="good"> Хороша </p>
+				<p class="version"><input name="yes" type="radio" value="soso"> Задовільна </p>
+				<p class="version"><input name="yes" type="radio" value="bad"> Погана </p>
+			</div>
+			<textarea class="textarea" placeholder="Повідомлення"></textarea><br>
+			<input type="button" value="Відправити" onclick="test(this.form)" class="act">
+			</form>
+
+		</div>
+		</div>
+	</div>
+
+
+	<section id="footer" class="clearfix">
+		<nav>
+			<ul class="footer-menu">
+				<li class="footer-item">
+					<a href="https://www.instagram.com/leya_zhmuruk/">
+						<img src="img/logo1.png" height="38px" width="38px">
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="https://www.facebook.com/leya.zhmuruk">
+						<img src="img/logo2.png" height="38px" width="38px">
+					</a>
+					
+				</li>
+				<li class="footer-item">
+					
+					<a href="https://telegram.org/">
+						<img src="img/logo3.png" height="38px" width="38px">
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="by">
+			Zhmuruk Lileya, AM-41
+		</div>
+	</section>
+
+</body>
+</html>
